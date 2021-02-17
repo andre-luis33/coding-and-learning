@@ -1,15 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, Text, View,  TouchableOpacity } from 'react-native';
+// import {} from 'reac'
 
 export default function App() {
    return (
       <View style={styles.container}>
-         <ScrollView>
-            <Text style={styles.texts}>A lot of cards</Text>   
-            <Text style={styles.texts}>A lot of cards</Text>    
-         </ScrollView>      
-         {/* <StatusBar style="auto" /> */}
+         <TouchableOpacity style={styles.button}>
+            <Text style={styles.text}>test</Text>
+         </TouchableOpacity>
+         <TouchableOpacity style={styles.button}>
+            <Text style={styles.text}>test</Text>
+         </TouchableOpacity>
       </View>
    );
 }
@@ -19,16 +20,20 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       justifyContent: 'center',
-      display: 'flex',
-      height: 300
+      alignItems: 'center'
+      // display: 'flex',
+      // height: 300
    },
-   texts: {
-      textAlign: 'left',
-      backgroundColor: 'red',
-      // alignSelf: 'center'
-      height: 50,
-      padding: 10,
-      display: 'flex',
-      alignItems: 'center',
+   button: {
+      width: 300,
+      height: 100,
+      borderRadius: 15,
+      backgroundColor: '#000',
+      margin: 20,
+      justifyContent: 'center',
+      alignItems: 'center'
+   },
+   text: {
+      color: '#fff'
    }
 });
