@@ -13,10 +13,7 @@ export default function Home() {
    return (
       <View style={styles.container}>
          <RectButton onPress={handleToDax} style={styles.button}>
-            <Text style={styles.text}>test</Text>
-         </RectButton>
-         <RectButton style={styles.button}>
-            <Text style={styles.text}>test</Text>
+            <Text style={styles.text}>DAX</Text>
          </RectButton>
       </View>
    );
